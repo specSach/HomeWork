@@ -9,7 +9,7 @@
 }
 .block {
   background: #f8d69b;
-  border-radius: 50px;
+  border-radius: 50px 0px 0px 50px;
   width: 300px;
   height: 250px;
   display: inline-block;
