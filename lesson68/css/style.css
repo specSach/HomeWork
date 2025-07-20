@@ -1,0 +1,51 @@
+body {
+  background: #777;
+}
+
+.fon {
+  height: 1250px;
+}
+
+.fon__text {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 36px;
+  transition: 0.3s all;
+}
+.fon__text:hover {
+  box-shadow: 0 0 10px 20px #666;
+}
+
+.fon__line {
+  transition: 0.5s all;
+  display: flex;
+  position: fixed;
+  left: 50vw;
+  bottom: 100px;
+  right: 100px;
+  height: 100px;
+  width: 800px;
+  background: #00ff1e;
+  border-radius: 10px;
+}
+
+.fon__line:hover {
+  box-shadow: 0 0 20px 10px #ffffff;
+}
+
+.fon__circle {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  height: 100px;
+  width: 100px;
+  background: #2f00ff;
+  border-radius: 100px;
+  transition: 0.5s all;
+}
+
+.fon__circle:hover {
+  box-shadow: 0 0 20px 5px #fff;
+  transform: translate(100px, 50%) scale(2);
+}
