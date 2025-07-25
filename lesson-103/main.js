@@ -3,37 +3,35 @@ const myProfile = {
   age: 30,
   isAdmin: true,
 
-  greet: function (name) {
-    return `Hello "${name}"`;
+  sayHello(name) {
+    console.log(`Hello ${name}`)
   }
 };
 
-const users = [ { 
-    name: "Alice",
-    age: 25,
-    isAdmin: false 
-  },
-  { 
-    name: "Bob",
-    age: 30,
-    isAdmin: false 
-  },
-  { 
-    name: "Charlie",
-    age: 35,
-    isAdmin: true 
-  },
-  { 
-    name: "David",
-    age: 40,
-    isAdmin: false 
-  }];
+const listUsers = [
+    {
+        name: 'Alex',
+        age: 10,
+        isAdmin: false
+    },
+    {
+        name: 'John',
+        age: 20,
+        isAdmin: true
+    },
+    {
+        name: 'Jopa',
+        age: 30,
+        isAdmin: false
+    }
+]
 
-let regularUsersCount = 0;
+let simpleUser = 0
 
-for (const user of users) {
-  if (!user.isAdmin) {
-    regularUsersCount++;
-  }
+for (let i = 0; i < listUsers.length; i++) {
+    if (listUsers[i].isAdmin == false) {
+        simpleUser += 1
+    }
 }
-console.log(`Количество простых пользователей: ${regularUsersCount}`);
+
+console.log(simpleUser)
