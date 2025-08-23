@@ -1,0 +1,10 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+.main {
+  flex-grow: 1;
+}
